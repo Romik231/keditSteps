@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">keditSteps</string>
-    <string name="incr">0</string>
+    <string name="counter">0</string>
     <string name="toast">Toast</string>
     <string name="count">Count</string>
-    <string name="random">Random</string>
+    <string name="reset">Reset</string>
 </resources>
