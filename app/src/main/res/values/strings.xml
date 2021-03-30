@@ -3,5 +3,7 @@
     <string name="counter">0</string>
     <string name="toast">Toast</string>
     <string name="count">Count</string>
-    <string name="reset">Reset</string>
+    <string name="random">Random</string>
+    <string name="titleSecondScreen">Здесь будет рандомное число между 0 и %1d</string>
+    <string name="defaultValueRandomNumber">0</string>
 </resources>
