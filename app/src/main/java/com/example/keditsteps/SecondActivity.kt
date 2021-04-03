@@ -1,5 +1,6 @@
 package com.example.keditsteps
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_second.*
@@ -17,7 +18,8 @@ class SecondActivity : AppCompatActivity() {
         const val TOTAL_COUNT = "total_count"
     }
 
-    fun showRandom()
+    @SuppressLint("SetTextI18n")
+    private fun showRandom()
     {
         val count = intent.getIntExtra(TOTAL_COUNT, 0)
 
@@ -27,7 +29,7 @@ class SecondActivity : AppCompatActivity() {
             randomInt = random.nextInt(count + 1)
         }
 
-        randomNumber.text = Integer.toString(randomInt)
+        randomNumber.text = randomInt.toString()
         textLabel.text = getString(R.string.titleSecondScreen, count)
     }
 }

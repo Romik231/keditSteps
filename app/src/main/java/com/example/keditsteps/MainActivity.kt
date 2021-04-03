@@ -44,4 +44,15 @@ class MainActivity : AppCompatActivity() {
         startActivity(randomIntent)
     }
 
+    fun addTextThirdActivity(view: View)
+    {
+        val thirdIntent = Intent(this, Third::class.java)
+        val text = "text from first activity"
+        val text2 = "текст для второго view"
+        thirdIntent.putExtra(Third.TEXT_FROM_FIRST_ACTIVITY, text)
+        thirdIntent.putExtra(Third.TEXT_SECOND_VIEW, text2)
+        startActivity(thirdIntent)
+    }
+
+
 }

@@ -6,4 +6,7 @@
     <string name="random">Random</string>
     <string name="titleSecondScreen">Здесь будет рандомное число между 0 и %1d</string>
     <string name="defaultValueRandomNumber">0</string>
+    <string name="textFirstAct">"this text got from first screen: %s"</string>
+    <string name="thirdView">thirdView</string>
+    <string name="anotherTexFromFirstScreen">Здесь еще текст: %s</string>
 </resources>
