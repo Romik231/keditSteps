@@ -10,11 +10,14 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     private lateinit var textView: TextView
+    lateinit var myObserver: MyObserver
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         textView = findViewById(R.id.textView2)
+        myObserver = MyObserver()
+        lifecycle.addObserver(myObserver)
 
     }
 
@@ -54,5 +57,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(thirdIntent)
     }
 
+    fun stateActivity(view: View)
+    {
+        val intent = Intent(this, StateActivity::class.java)
+        startActivity(intent)
+    }
 
 }
